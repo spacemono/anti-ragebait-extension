@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Always Focused",
+  "version": "3.4",
+  "description": "Lock in with no distructions.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "horizontal.jpg",
+        "vertical.jpg"
+      ],
+      "matches": [
+        "*://*.youtube.com/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

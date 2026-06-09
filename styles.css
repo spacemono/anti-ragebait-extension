@@ -1,0 +1,12 @@
+html[data-yt-covers="enabled"] img.yt-core-image,
+html[data-yt-covers="enabled"] ytd-thumbnail img,
+html[data-yt-covers="enabled"] img.ytCoreImageHost,
+html[data-yt-covers="enabled"] yt-image img,
+html[data-yt-covers="enabled"] .yt-core-image--fill-parent-height {
+    opacity: 0 !important;
+}
+
+html[data-yt-covers="enabled"] img[data-replaced="true"] {
+    opacity: 1 !important;
+    object-fit: cover !important;
+}
