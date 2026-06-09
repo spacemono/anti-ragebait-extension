@@ -1,0 +1,1 @@
+# anti-ragebait-extension
